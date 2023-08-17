@@ -229,7 +229,7 @@ mv $dir_name cdnfly
 cd /opt/cdnfly/master
 sed -i "s/https:\/\/dl2.cdnfly.cn\//http:\/\/auth.cdnfly.cn\//g" install.sh
 sed -i "s/https:\/\/us.centos.bz\//http:\/\/auth.cdnfly.cn\//g" install.sh
-sed -i "s/http:\/\/129.226.89.17\/elasticsearch-7.6.1-x86_64.rpm/g" install.sh
+sed -i "s/http:\/\/129.226.89.17\/elasticsearch-7.6.1-x86_64.rpm//g" install.sh
 chmod +x install.sh
 ./install.sh $@
 
